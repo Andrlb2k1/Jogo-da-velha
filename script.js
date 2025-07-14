@@ -1,6 +1,7 @@
 var tab;
 const hPlayer = "X";
 const rPlayer = "O";
+
 const comb = [
   [0, 1, 2], 
   [3, 4, 5], 
@@ -11,6 +12,7 @@ const comb = [
   [1, 4, 7], 
   [2, 5, 8]
 ];
+
 const sr = document.querySelectorAll('.square');
 Start();
 
