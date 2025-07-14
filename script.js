@@ -53,7 +53,7 @@ function verVic(tb, player) {
 function endGame(vic) {
 	for (let index of comb[vic.index]) {
 		document.getElementById(index).style.backgroundColor =
-			vic.player == hPlayer ? "blue" : "magenta";
+			vic.player == hPlayer ? "green" : "red";
 	}
 	for (var j = 0; j < sr.length; j++) {
 		sr[j].removeEventListener('click', turnC, false);
@@ -77,7 +77,7 @@ function bestPos() {
 function verEmp() {
 	if (empSq().length == 0) {
 		for (var k = 0; k < sr.length; k++) {
-			sr[k].style.backgroundColor = "purple";
+			sr[k].style.backgroundColor = "yellow";
 			sr[k].removeEventListener('click', turnC, false);
 		}
 		champ("Empatou! Deu velha!")
